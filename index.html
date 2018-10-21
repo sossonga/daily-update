@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Daily Update</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="dailyupdate.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<script src="forecast.js" type="text/javascript"></script>
+	<script src="skycons.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="current-weather-details">
+		<h2>Forecast</h2>
+		<button id="getWeather" onclick="this.style.display='none';showWeather();">Get Forecast!</button>
+		<p>The current forecast is:</p>
+	
+		<p id="weather-summary"></p>
+		<canvas id="current-icon" width="64" height="64"></canvas><br />
+		<a id="current-humidity">--</a><br />
+		<a id="current-precipProbability">--</a><br />
+		<a id="current-precipType">--</a><br />
+		<a id="current-windSpeed">--</a><br />
+		<a id="current-temperature">--</a><br />
+		<br />
+
+		<p>The week's forecast is:</p>
+		<table>
+		<tr>
+			<th></th>
+			<th><a id="weekday1">---</a><br /><canvas id="icon1" width="64" height="64"></canvas></th>
+			<th><a id="weekday2">---</a><br /><canvas id="icon2" width="64" height="64"></canvas></th>
+			<th><a id="weekday3">---</a><br /><canvas id="icon3" width="64" height="64"></canvas></th>
+			<th><a id="weekday4">---</a><br /><canvas id="icon4" width="64" height="64"></canvas></th>
+			<th><a id="weekday5">---</a><br /><canvas id="icon5" width="64" height="64"></canvas></th>
+			<th><a id="weekday6">---</a><br /><canvas id="icon6" width="64" height="64"></canvas></th>
+			<th><a id="weekday7">---</a><br /><canvas id="icon7" width="64" height="64"></canvas></th>
+		</tr>
+		<tr>
+			<td>Humidity:</td>
+			<td><a id="daily-humidity1">---</a></td>
+			<td><a id="daily-humidity2">---</a></td>
+			<td><a id="daily-humidity3">---</a></td>
+			<td><a id="daily-humidity4">---</a></td>
+			<td><a id="daily-humidity5">---</a></td>
+			<td><a id="daily-humidity6">---</a></td>
+			<td><a id="daily-humidity7">---</a></td>
+		</tr>
+		<tr>
+			<td>Precipitation Chance:</td>
+                    	<td><a id="daily-precipProbability1">---</a></td>
+                        <td><a id="daily-precipProbability2">---</a></td>
+                        <td><a id="daily-precipProbability3">---</a></td>
+                        <td><a id="daily-precipProbability4">---</a></td>
+                        <td><a id="daily-precipProbability5">---</a></td>
+                        <td><a id="daily-precipProbability6">---</a></td>
+                        <td><a id="daily-precipProbability7">---</a></td>
+                </tr>
+		<tr>
+			<td>Precipitation:</td>
+                        <td><a id="daily-precipType1">---</a></td>
+                        <td><a id="daily-precipType2">---</a></td>
+                        <td><a id="daily-precipType3">---</a></td>
+                        <td><a id="daily-precipType4">---</a></td>
+                        <td><a id="daily-precipType5">---</a></td>
+                        <td><a id="daily-precipType6">---</a></td>
+                        <td><a id="daily-precipType7">---</a></td>
+                </tr>
+		<tr>
+			<td>Wind Speed:</td>
+                    	<td><a id="daily-windSpeed1">---</a></td>
+                        <td><a id="daily-windSpeed2">---</a></td>
+                        <td><a id="daily-windSpeed3">---</a></td>
+                        <td><a id="daily-windSpeed4">---</a></td>
+                        <td><a id="daily-windSpeed5">---</a></td>
+                        <td><a id="daily-windSpeed6">---</a></td>
+                        <td><a id="daily-windSpeed7">---</a></td>
+                </tr>
+		<tr>
+			<td>Temperature:</td>
+                    	<td><a id="daily-temperature1">---</a></td>
+                        <td><a id="daily-temperature2">---</a></td>
+                        <td><a id="daily-temperature3">---</a></td>
+                        <td><a id="daily-temperature4">---</a></td>
+                        <td><a id="daily-temperature5">---</a></td>
+                        <td><a id="daily-temperature6">---</a></td>
+                        <td><a id="daily-temperature7">---</a></td>
+                </tr>
+		</table>
+	</div>
+	<p>Powered by Dark Sky</p>
+	<!--<canvas id="current-icon" width="128" height="128"></canvas>-->
+	<div id="travel-eta">
+		<h2>Travel ETA</h2>
+	</div>
+</body>
+</html>
